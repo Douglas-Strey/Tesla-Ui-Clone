@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import { ReactNode } from 'react';
 
-import useModel from '../useModel';
+import useModel from '../../hooks/useModel';
 
 import { Container } from './styles';
 
@@ -24,7 +24,7 @@ function ModelSection({ modelName, overlayNode, children, ...props }: Props) {
                 sectionRef
             })
         }
-    }, [])
+    }, [modelName, overlayNode, registerModel])
 
     return (
     <Container ref={sectionRef} {...props}>
