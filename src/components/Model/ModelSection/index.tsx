@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import { ReactNode } from 'react';
 
-import useModel from '../../hooks/useModel';
+import useModel from '../../Hooks/useModel';
 
 import { Container } from './styles';
 
