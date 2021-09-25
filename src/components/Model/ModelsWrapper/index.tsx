@@ -1,6 +1,8 @@
+import React from 'react';
+
 import { Container } from './styles';
 
-function ModelsWrapper({ children }) {
+const ModelsWrapper: React.FC = ({ children }) => {
     return (
         <Container>
             {children}
