@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-interface CarModel {
+export interface CarModel {
     modelName: string;
     overlayNode: ReactNode; // serve para linkar o overlay a própria section
     sectionRef: React.RefObject<HTMLElement>;
