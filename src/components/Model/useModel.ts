@@ -14,4 +14,6 @@ export default function useModel(modelName: string) {
         getModelByName,
         modelName
     ])
+
+    return { registerModel, getModel }
 }
