@@ -20,28 +20,13 @@ const UniqueOverlay: React.FC = () => {
             <Footer style={{ opacity }}>
                 <ul>
                     <li>
-                        <a href="#">Tesla © 2021</a>
+                        <a href="#">Tesla UI Clone</a>
                     </li>
                     <li>
-                        <a href="#">Privacy & Legal</a>
+                        <a href="#">Feito por Douglas, com apoio da Rocketseat</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Engage</a>
-                    </li>
-                    <li>
-                        <a href="#">Locations</a>
-                    </li>
-                    <li>
-                        <a href="#">UI CLone</a>
+                        <a href="#">Imagens pegas no Google</a>
                     </li>
                 </ul>
             </Footer>
