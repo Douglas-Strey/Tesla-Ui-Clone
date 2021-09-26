@@ -39,14 +39,20 @@ const ModelOverlay: React.FC<Props> = ({ model, children }) => {
     // Necessário para saber quando o usuário scrollou dentro da div, é dividido pelo valor máximo para saber a porcentagem
     const sectionScrollProgress = useTransform(scrollY, y => (y - dimensions.offsetTop) / dimensions.offsetHeight);
 
+    // aqui é feito toda a animação de opacidade dos modelos
     const opacity = useTransform(
         sectionScrollProgress,
         [-0.42, -0.05, 0.05, 0.42],
         [0, 1, 1, 0]
     );
 
+    // feito para poder selecionar de forma individual cada nome de cada modelo
+    const pointerEvents = useTransform(opacity, value =>
+        value > 0 ? 'auto' : 'none'
+    );
+
     return (
-        <Container style={{ opacity }}>
+        <Container style={{ opacity, pointerEvents }}>
             {children}
         </Container>
     );
